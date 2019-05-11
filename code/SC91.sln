@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Feature", "Feature", "{CD727EF5-EA27-43B1-AFC3-7FA4D10ABF76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Foundation", "Foundation", "{8577DC82-57DA-4D47-967A-7180DD273501}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Project", "Project", "{34233AE2-4222-4378-99C7-4D58B348B4E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Website", "Website", "{BABC7709-5959-4EB7-8A3A-C739F87D1F40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{D8A75B21-F0B9-4BE5-91B1-0C3759AE0113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SC91.Project.Website", "Project\Website\code\SC91.Project.Website.csproj", "{D185CA00-2F78-4BD9-BDA9-95042A224607}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SC91.Feature.Product", "Feature\Product\code\SC91.Feature.Product.csproj", "{55366FFA-4528-4645-8B79-770D85DB5DD7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SC91.Foundation.Devices", "Foundation\Devices\code\SC91.Foundation.Devices.csproj", "{6EB2EAD6-37B9-43B6-9663-8BBCED078242}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Devices", "Devices", "{887CE368-1367-4912-AA8F-7E93BFF2B74E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D185CA00-2F78-4BD9-BDA9-95042A224607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D185CA00-2F78-4BD9-BDA9-95042A224607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D185CA00-2F78-4BD9-BDA9-95042A224607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D185CA00-2F78-4BD9-BDA9-95042A224607}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55366FFA-4528-4645-8B79-770D85DB5DD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55366FFA-4528-4645-8B79-770D85DB5DD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55366FFA-4528-4645-8B79-770D85DB5DD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55366FFA-4528-4645-8B79-770D85DB5DD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EB2EAD6-37B9-43B6-9663-8BBCED078242}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB2EAD6-37B9-43B6-9663-8BBCED078242}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB2EAD6-37B9-43B6-9663-8BBCED078242}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB2EAD6-37B9-43B6-9663-8BBCED078242}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BABC7709-5959-4EB7-8A3A-C739F87D1F40} = {34233AE2-4222-4378-99C7-4D58B348B4E9}
+		{D8A75B21-F0B9-4BE5-91B1-0C3759AE0113} = {CD727EF5-EA27-43B1-AFC3-7FA4D10ABF76}
+		{D185CA00-2F78-4BD9-BDA9-95042A224607} = {BABC7709-5959-4EB7-8A3A-C739F87D1F40}
+		{55366FFA-4528-4645-8B79-770D85DB5DD7} = {D8A75B21-F0B9-4BE5-91B1-0C3759AE0113}
+		{6EB2EAD6-37B9-43B6-9663-8BBCED078242} = {887CE368-1367-4912-AA8F-7E93BFF2B74E}
+		{887CE368-1367-4912-AA8F-7E93BFF2B74E} = {8577DC82-57DA-4D47-967A-7180DD273501}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A9A1722-8E4F-4E68-8349-589EC70FEB94}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8;packages\EnterpriseLibrary.TransientFaultHandling.Caching.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Data.6.0.1304.1\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.ServiceBus.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.WindowsAzure.Storage.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.TransientFaultHandling.Configuration.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal

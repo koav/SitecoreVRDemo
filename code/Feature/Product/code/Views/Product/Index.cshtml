@@ -1,0 +1,29 @@
+﻿@using SC91.Feature.Product.Entities
+@using SC91.Foundation.Devices.Helpers
+@using Sitecore.Mvc
+@model SC91.Feature.Product.Models.ProductViewModel
+@{
+    Layout = null;
+}
+
+<!-- Portfolio Item Heading -->
+<h1 class="my-4">@Model.Product.Title</h1>
+
+<!-- Item Row -->
+<div class="row">
+
+    <div class="col-md-8">
+        <img class="img-fluid" src="@Model.Product.GetImageLink()" alt="">
+    </div>
+
+    <div class="col-md-4">
+        <h3 class="my-3">Description</h3>
+        <p>@Html.Raw(Model.Product.Description)</p>
+        <h3 class="my-3">Price: @Model.Product.Price</h3>
+        <p>
+            <a href="@DeviceHelper.GetVrLink(Sitecore.Context.Item)" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View in VR</a>
+        </p>
+    </div>
+
+</div>
+<!-- /.row -->
