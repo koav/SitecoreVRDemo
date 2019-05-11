@@ -163,3 +163,4 @@ sc.lib/*.dll
 /src/**/Package_Release
 /src/packages
 /packages
+packages
