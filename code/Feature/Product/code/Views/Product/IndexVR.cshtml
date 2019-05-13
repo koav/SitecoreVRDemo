@@ -4,7 +4,13 @@
     Layout = null;
 }
 
-
+<script>
+    AFRAME.registerComponent('sitecore-demo', {
+        init:function(){
+            console.log('Sitecore demo running');
+        }
+    });
+</script>
 
 <!-- Scene -->
 <a-scene id="sitecore-demo">
