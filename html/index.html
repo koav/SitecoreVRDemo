@@ -38,17 +38,17 @@
 
     <!-- Demo assets -->
     <a-assets>
-      <a-asset-item id="sitecore-obj" src="models/sitecore_logo.obj"></a-asset-item>
-      <a-asset-item id="sitecore-mtl" src="models/sitecore_logo.mtl"></a-asset-item>
+      <a-asset-item id="sitecore-obj" src="models/i8.obj"></a-asset-item>
+      <a-asset-item id="sitecore-mtl" src="models/i8.mtl"></a-asset-item>
     </a-assets>
 
 
 
     <!-- Sitecore logo -->
-    <a-entity scale="0.5 0.5 0.5" rotation="0 -90 0" obj-model="obj: #sitecore-obj; mtl: #sitecore-mtl"
-              position="0 0.5 0"
+    <a-entity scale="0.025 0.025 0.025" rotation="0 0 90" obj-model="obj: #sitecore-obj; mtl: #sitecore-mtl"
+              position="0 2 0"
               shadow="cast: true; receive: true"
-              animation="property: rotation; to: 0 1 0; loop: true; dur: 30000; easing: linear; isRawProperty:true">
+              animation="property: rotation; to: 0 0 0; loop: true; dur: 30000; easing: linear; isRawProperty:true">
     </a-entity>
 
     <!-- Creates the ground -->
