@@ -13,33 +13,27 @@
 </script>
 
 <!-- Scene -->
-<a-scene id="sitecore-demo">
+<a-scene id="sitecore-demo" background="color: #AAB" fog="type: linear; color: #AAB; far: 30; near: 0">
 
     <!-- Demo assets -->
     <a-assets>
-        <a-asset-item id="sitecore-obj" src="@Model.Product.GetVrObjectLink()"></a-asset-item>
-        <a-asset-item id="sitecore-mtl" src="@Model.Product.GetVrModelLink()"></a-asset-item>
+        <a-asset-item id="sitecore-gltf" src="@Model.Product.GetVrModelLink()"></a-asset-item>
     </a-assets>
 
 
-    <!-- Sitecore logo -->
-    <a-entity scale="0.5 0.5 0.5" rotation="0 -90 0" obj-model="obj: #sitecore-obj; mtl: #sitecore-mtl"
-              position="0 0.5 0"
-              shadow="cast: true; receive: true"
-              animation="property: rotation; to: 0 1 0; loop: true; dur: 30000; easing: linear; isRawProperty:true">
+    <!-- Product -->
+    <a-entity scale="0.5 0.5 0.5" rotation="0 0 0"
+              geometry=""
+              gltf-model="#sitecore-gltf"
+              position="0 1.9 1"
+              shadow="cast: true; receive: false"
+              animation="property: rotation; to: 0 360 0; loop: true; dur: 30000">
     </a-entity>
 
     <!-- Creates the ground -->
-    <a-plane rotation="-90 0 0" width="200" height="200" color="#eee" shadow="cast: true; receive: true"></a-plane>
-
-    <!-- Sky -->
-    <a-sky color="#f9f9f9" radius="1000"></a-sky>
-
-    <a-light type="directional" color="#FFF" intensity="0.6" position="5 4 3"></a-light>
-    <a-light type="ambient" color="#FFF"></a-light>
+    <a-plane rotation="-90 0 0" width="500" height="500" color="#eee" shadow="cast: true; receive: true"></a-plane>
 
     <!-- Camera -->
-    <a-entity camera="userHeight:1.8;" wasd-controls look-controls position="0 1.5 3"></a-entity>
-    <!-- <a-scene stats></a-scene> -->
+    <a-entity camera="userHeight:1.8;" wasd-controls look-controls position="0 1.8 3" ></a-entity>
 
 </a-scene>

@@ -15,8 +15,7 @@ namespace SC91.Feature.Product.Entities
             this.Description = InnerItem.Fields["Product description"]?.Value;
             this.Price = Convert.ToDecimal(InnerItem.Fields["Product price"]?.Value);
             this.Image = ((ImageField)InnerItem.Fields["Product image"])?.MediaItem;
-            this.VrModel = ((FileField)InnerItem.Fields["VR Object"])?.MediaItem;
-            this.VrObject = ((FileField)InnerItem.Fields["VR Model"])?.MediaItem;
+            this.VrModel = ((FileField)InnerItem.Fields["VR Model"])?.MediaItem;
         }
 
         public Item InnerItem { get; }
@@ -24,7 +23,6 @@ namespace SC91.Feature.Product.Entities
         public string Description { get; set; }
         public decimal Price { get; set; }
         public Item Image { get; set; }
-        public Item VrObject { get; set; }
         public Item VrModel { get; set; }
     }
 
@@ -37,12 +35,6 @@ namespace SC91.Feature.Product.Entities
                 : null;
         }
 
-        public static string GetVrObjectLink(this Product product)
-        {
-            return product?.VrObject != null
-                ? Sitecore.Resources.Media.MediaManager.GetMediaUrl(product.VrObject)
-                : null;
-        }
         public static string GetVrModelLink(this Product product)
         {
             return product?.VrModel != null
